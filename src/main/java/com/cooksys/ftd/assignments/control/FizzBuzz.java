@@ -120,15 +120,12 @@ public class FizzBuzz {
 		return strArray;
 	}
 
-
-
 	/**
 	 * For this main method, iterate over the numbers 1 through 115 and print the
 	 * relevant messages to sysout
 	 */
 	public static void main(String[] args) {
 
-		// Need to determine how to get the relevant messages
 		for (int i = 1; i <= 115; i++) {
 			System.out.println(i);
 		}
