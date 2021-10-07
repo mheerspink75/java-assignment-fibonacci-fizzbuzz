@@ -2,7 +2,6 @@ package com.cooksys.ftd.assignments.control;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
-
 /**
  * FizzBuzz is an old programming exercise. The goal is to iterate over a range
  * of numbers and print a message about each number's divisibility.
@@ -28,15 +27,15 @@ public class FizzBuzz {
 	 * @throws IllegalArgumentException if b is zero
 	 */
 	public static boolean divides(int a, int b) throws IllegalArgumentException {
-		
+
 		// Throw Exception if b = 0
 		if (b == 0) {
 			throw new IllegalArgumentException();
 		}
-		
+
 		// Check for whole number and remainder
 		if (a >= 1 && a > b && b >= 1) {
-			
+
 			boolean isEvenlyDivisible = (a / b) % 2 == 0;
 			return isEvenlyDivisible;
 
@@ -58,7 +57,7 @@ public class FizzBuzz {
 	 *         divisible by either 3 or 5
 	 */
 	public static String message(int n) {
-		//Need to determine if the junit assertTrue() tests are correct???
+		// Need to determine if the junit assertTrue() tests are correct???
 		String message = "";
 
 		if (n % 3 != 0 && n % 5 != 0) {
@@ -88,9 +87,10 @@ public class FizzBuzz {
 	 *                                  start
 	 */
 	public static String[] messages(int start, int end) throws IllegalArgumentException {
-		
+
 		// Need to determine the correct equation to pass the tests
-		// Also, need to return the message array with correct messages and no null values 
+		// Also, need to return the message array with correct messages and no null
+		// values
 		if (start > end) {
 			throw new IllegalArgumentException();
 		}
@@ -126,6 +126,7 @@ public class FizzBuzz {
 	 */
 	public static void main(String[] args) {
 
+		// Need to determine how to print the relevant messages here...
 		for (int i = 1; i <= 115; i++) {
 			System.out.println(i);
 		}
