@@ -9,6 +9,7 @@ public class FizzBuzzTests {
 
     @Test
     public void dividesTest() {
+    	//a is not evenly divisible by b -> false?
         assertTrue(FizzBuzz.divides(3, 3));
         assertTrue(FizzBuzz.divides(5, 5));
         assertTrue(FizzBuzz.divides(15, 3));
