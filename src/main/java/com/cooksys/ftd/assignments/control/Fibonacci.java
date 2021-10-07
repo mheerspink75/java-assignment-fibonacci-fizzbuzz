@@ -1,6 +1,6 @@
 package com.cooksys.ftd.assignments.control;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+//import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * The Fibonacci sequence is simply and recursively defined: the first two elements are `1`, and
@@ -24,7 +24,12 @@ public class Fibonacci {
      * @throws IllegalArgumentException if the given index is less than zero
      */
     public static int atIndex(int i) throws IllegalArgumentException {
-        throw new NotImplementedException();
+    	
+    	if (i < 0) {
+    		throw new IllegalArgumentException();
+    	}
+        // implement the exception
+    	return 0;
     }
 
     /**
@@ -38,7 +43,12 @@ public class Fibonacci {
      *                                  given end is less than the given start
      */
     public static int[] slice(int start, int end) throws IllegalArgumentException {
-        throw new NotImplementedException();
+    	
+    	if (start < 0 || end < 0 || end < start) {
+            throw new IllegalArgumentException();
+    	}
+    	//implement the method
+    	return new int[0];
     }
 
     /**
@@ -49,6 +59,10 @@ public class Fibonacci {
      * @throws IllegalArgumentException if the given count is negative
      */
     public static int[] fibonacci(int count) throws IllegalArgumentException {
-        throw new NotImplementedException();
+    	if (count < 0) {
+            throw new IllegalArgumentException();
+    	}
+    	//implement the method
+    	return new int[0];
     }
 }
